@@ -2,28 +2,28 @@
 Name: monit
 Cartridge-Short-Name: MONIT
 Architecture: x86_64
-Display-Name: monit 5.8.1
+Display-Name: monit 5.22.0-1
 Description: Monit is an open source utility for managing and monitoring, processes, programs, files, directories and filesystems
-Version: '5.8'
+Version: '5.22'
 Versions:
-- '5.8'
-Cartridge-Version: 0.0.2
-Cartridge-Vendor: mfojtik
+- '5.22'
+Cartridge-Version: 5.22.0-1
+Cartridge-Vendor: msl521
 License: GPL
-Vendor: mfojtik
+Vendor: msl521
 Categories:
 - service
 - embedded
-Website: http://collectd.org
+Website: https://mmonit.com/monit/
 Provides:
-- monit-5.8
+- monit-5.22
 - monit
 Scaling:
   Min: 1
   Max: -1
 Group-Overrides:
 - components:
-  - monit-5.8
+  - monit-5.22
   - web_framework
 Endpoints:
 - Private-IP-Name: HTTP_IP
@@ -36,4 +36,4 @@ Endpoints:
   - Frontend: '/monit-status'
     Backend: '/'
 
-Source-Url: https://github.com/openshift-cartridges/openshift-origin-cartridge-monit.git
+Source-Url: https://github.com/msl521/openshift-origin-cartridge-monit.git
